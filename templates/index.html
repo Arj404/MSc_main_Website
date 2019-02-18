@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="heading">
+        <h1><img id="logo2" src="{% static 'icon.png' %}">MICROSOFT STUDENT CHAPTER</h1>
+        <h4 id="thapar">THAPAR INSTITUTE <br><small>OF ENGINEERING &amp; TECHNOLOGY<br>(Deemed to be University)</small></h4>
+    </div>
+    <div class="events">
+        <h2>OUR EVENTS</h2>
+        <table>
+            <tr>
+                {% for i in event %}
+            <td id="event_td">
+                <div>
+                    <div>
+                        <img src="{{ i.Image.url }}" alt="Img" height="140" width="212">
+                    </div>
+                </div>
+                <h4><b>{{ i.heading }}</b></h4>
+                <p>
+                    {{ i.description }}
+                </p>
+                <a class="button2">Read More</a>
+            </td>
+            {% endfor %}
+            </tr>
+        </table>
+        <!--<ul>
+            {% for i in event %}
+            <li>
+                <div>
+                    <div>
+                        <img src="{{ i.Image.url }}" alt="Img" height="140" width="212">
+                    </div>
+                </div>
+                <h4><b>{{ i.heading }}</b></h4>
+                <p>
+                    {{ i.description }}
+                </p>
+                <a class="button2">Read More</a>
+            </li>
+            {% endfor %}
+        </ul>-->
+    </div>
+    <div class="gallery">
+        <h2>OUR GALLERY</h2>
+        <ul>
+            {% for i in gallery %}
+            <li>
+                <img src="{{ i.Image.url }}" alt="Img" height="140" width="212">
+            </li>
+            {% endfor %}
+        </ul>
+        <a>View More&rarr;</a>
+    </div>
+    <div class="team">
+        <h2>MEET OUR TEAM</h2>
+        <ul>
+            {% for i in core_team %}
+            <li>
+                {% if i.Image %}
+                <img src={{i.Image.url}} alt="Img" height="140" width="212"/>
+                {% endif %}
+                <h4>{{ i.name }}</h4>
+                <h5>{{ i.post }}</h5>
+            </li>
+            {% endfor %}
+        </ul>
+        <a>Visit Team Page&rarr;</a>
+    </div>
+    <div class="about">
+        <h2>ABOUT US</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>Microsoft Student chapter was formed in lieu of providing students
+                        the appropriate platform for cultivating technical skills and a spirit
+                        of teamwork. The vision is to create a community of computer enthusiasts
+                        with a mindset of development. Interaction with each other and seniors
+                        play an important role in the growth of a student's knowledge of a topic.
+                        Various constructive ideas are shared regarding the technical space. The
+                        society encourages sequential and systematic learning with a belief of staying
+                        updated with new technologies and therefore organises many workshops on current
+                        scenario computer related concepts.</p>
+                </td>
+                <td id="Aboutimage"><img src="{% static 'IMG.jpg' %}"></td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="contact">
+        <h2>GET IN TOUCH</h2>
+        <table>
+            <tr>
+                <td id="Ttd1">
+                    <p>Subscribe to our newsletter</p>
+                    <!-- put url of subscribed web page in action="url needed"-->
+                    <form class="form" action="" method="get">
+                        <input id="email" type="email" placeholder="Enter Your Email Address" required><br>
+                        <input id="button" type="button" value="Subscribe">
+                    </form>
+                </td>
+                <td id="Ttd2">
+                    <p id="Crig">Email: msc@thapar.edu<br>Mobile: +91-9990954323<br>
+                        +91-8437592396</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+{% endblock %}

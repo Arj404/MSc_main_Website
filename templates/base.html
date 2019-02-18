@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- css block -->
+    {% block css %}
+    {% endblock %}
+
+
+    <link rel="icon" href="{% static 'icon.png' %}">
+    <!-- apple icon not working -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'apple-icon/apple-touch-icon-57x57.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'apple-icon/apple-touch-icon-114x114.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'apple-icon/apple-touch-icon-72x72.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'apple-icon/apple-touch-icon-144x144.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'apple-icon/apple-touch-icon-60x60.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'apple-icon/apple-touch-icon-120x120.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'apple-icon/apple-touch-icon-76x76.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'apple-icon/apple-touch-icon-152x152.png' %}" type="image/x-icon">
+
+    <!-- apple icon links ended -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+    <title>
+        Microsoft Student Chapter
+    </title>
+
+
+
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li id="logo"><img src="{% static 'icon.png' %}">MSC</li>
+            <li><a class="link" href="{% url 'index' %}">HOME</a></li>
+            <li><a class="link" href="{% url 'events' %}">EVENTS</a></li>
+            <li><a class="link" href="{% url 'gallery' %}">GALLERY</a></li>
+            <li><a class="link" href="{% url 'team' %}">TEAM</a></li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+
+    <!-- body block-->
+    {% block body %}
+    {% endblock %}
+
+    <div class="footer">
+        <ul>
+            <li><a class="link" href="{% url 'index' %}">HOME</a></li>
+            <li><a class="link" href="{% url 'events' %}">EVENTS</a></li>
+            <li><a class="link" href="{% url 'gallery' %}">GALLERY</a></li>
+            <li><a class="link" href="{% url 'team' %}">TEAM</a></li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+        <p>© 2018 Microsoft Student Chapter. All Rights Reserved | Design by <a>Team</a> | <a>Privacy Policy</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div>
+        <br>
+        <h2>REGISTRATION</h2>
+        <br>
+    </div>
+    <div>
+        <form class="main_form" method="get">
+            <input class="form" type="text" placeholder="YOUR NAME" required><br>
+            <input class="form" type="email" placeholder="YOUR EMAIL" required><br>
+            <input class="form" type="tel" placeholder="CONTACT NUMBER" required><br>
+            <input class="form" type="number" placeholder="CURRENT YEAR OF STUDY" required><br>
+            <input id="button" type="button" value="Submit"><br><br><br><br><br>
+        </form>
+    </div>
+
+{% endblock %}
