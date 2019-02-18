@@ -1,0 +1,114 @@
+#thapar {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: .8rem;
+    margin: auto;
+    padding: .1rem;
+    font-weight: 100;
+}
+
+.heading {
+    margin: auto;
+    padding: 2rem;
+    background-color: #00AAD3;
+}
+
+.events {
+    padding: 3rem;
+}
+
+.gallery {
+    padding: 3rem;
+    background-color: #00D393;
+    margin: auto;
+}
+.gallery a {
+    color: #843E5A;
+}
+
+.team {
+    padding: 3rem;
+}
+
+.team a {
+    color: #843E5A;
+}
+
+.about {
+    padding: 3rem;
+    background-color: #00D393;
+}
+
+.about td {
+    padding: 1rem;
+}
+
+#Aboutimage {}
+
+.contact {
+    padding: 3rem;
+    background-color: #FBCC94;
+}
+
+.contact table {
+    width: 100%;
+    height: auto;
+}
+
+#Ttd1 {
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+#Ttd1 p {
+    margin: 1rem;
+}
+
+#email {
+    margin: 0.5rem;
+    width: 50%;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#button {
+    margin: .5rem;
+    width: 50.8%;
+    border: 0px;
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #E89834;
+    border-radius: 6px;
+    color: white;
+}
+.button2 {
+    margin: .5rem;
+    width: 80px;
+    border: 0px;
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #00AAD3;
+    border-radius: 6px;
+    color: white;
+}
+#Ttd2 {
+    padding: 2rem;
+    text-align: right;
+}
+#event_td {
+    padding: 4rem;
+    text-align: centre;
+    margin: auto;
+
+}
