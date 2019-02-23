@@ -21,3 +21,4 @@ class Events(models.Model):
 
 class Gallery(models.Model):
     Image = models.ImageField(upload_to="gallery/")
+
